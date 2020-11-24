@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MJ BANK</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+<div class="title">MJ BANK</div>
+    <p style="font-weight: bold;color:rgb(255, 74, 74)">개인정보 입력 (*은 필수)</p>
+
+    <!--수정 금지-->
+    <form action="register.php" method="POST">
+        <p>*이름:&emsp;&emsp;&nbsp;<input type="text" name="name" required="required"></p>
+        <p>*주민번호:&nbsp;<input type="text" name="rrn" required="required"></p>
+        <p>*생년월일:&nbsp;<input type="date" name="birth_date" required="required"></p>
+        <p>*전화번호:&nbsp;<input type="text" name="phone" required="required"></p>
+        <p>*이메일: &emsp;<input type="text" name="email" required="required"></p>
+        <p>직업:&emsp;&emsp;&nbsp;&nbsp;<input type="text" name="job"></p>
+        <p><textarea name="address" rows="3" cols='33' placeholder="주소"></textarea></p>
+       <div style="text-align:center;"><p><input type="submit" value="회원가입"></p></div>
+   </form>
+   <div>
+       <p><button type="button" onclick="location.href = 'login.php'">로그인</button></p>
+    </div>
+   <!--수정 금지-->
+
+   <footer>
+       <div>
+       <p><a href="#">About us</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Site map</a></p>
+    </div>
+    <div>
+        <p>2020 Copyright MJBANK</p>
+    </div>
+
+   </footer>
+</body>
+
+</html>
